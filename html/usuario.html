@@ -71,128 +71,34 @@
         </div>
     </div>
 
-    <!-- CONTENEDOR DE FILTRADOR Y CONTENEDOR-->
-    <main class="contenedor">
+    <div class="main">
 
-        <form class="filtros">
-            <h2>Filtrar por:</h2>
+        <h2>Iniciar sesión con cuenta</h2>
 
-            <div class="campo-filtro">
-                <label>Marca:</label>
-                <select name="marca" id="marca">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="Apple">Apple</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="Xiaomi">Xiaomi</option>
-                    <option value="Poco">POCO</option>
-                    <option value="Motorola">Motorola</option>
-                </select>
+        <form class="registrarse-form">
+            <div class="campo-form-registrarse">
+                <h3>Dirección de correo electronico</h3>
+                <input type="text" name="email" id="email">
             </div>
 
-            <div class="campo-filtro">
-                <label>Precio minimo:</label>
-                <select name="minimo" id="minimo">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="40000">40.000</option>
-                    <option value="50000">50.000</option>
-                    <option value="60000">60.000</option>
-                    <option value="70000">70.000</option>
-                    <option value="80000">80.000</option>
-                    <option value="90000">90.000</option>
-                </select>
+            <div class="campo-form-registrarse">
+                <h3>Contraseña</h3>
+                <div class="input-password">
+                    <input type="password" name="password" id="password">
+                    <button id="mostrar-password">Mostrar</button>
+                </div>
             </div>
 
-            <div class="campo-filtro">
-                <label>Precio máximo:</label>
-                <select name="maximo" id="maximo">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="90000">90.000</option>
-                    <option value="100000">100.000</option>
-                    <option value="110000">110.000</option>
-                    <option value="120000">120.000</option>
-                    <option value="130000">130.000</option>
-                    <option value="140000">140.000</option>
-                </select>
-            </div>
+            <a href="#" class="olvido">¿Olvidó su contraseña?</a>
 
-            <div class="campo-filtro">
-                <label>Memoria interna</label>
-                <select name="cmemoria" id="memoria">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="32">32 GB</option>
-                    <option value="64">64 GB</option>
-                    <option value="128">128 GB</option>
-                    <option value="256">256 GB</option>
-                </select>
-            </div>
+            <input type="submit" class="btn-iniciar-sesion" value="Iniciar Sesión">
 
-            <div class="campo-filtro">
-                <label>Cámara:</label>
-                <select name="camara" id="camara">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="32">32px</option>
-                    <option value="48">48px</option>
-                    <option value="120">120px</option>
-                    <option value="200">200px</option>
-                </select>
-            </div>
+            <a href="#" class="no-cuenta">¿No tiene una cuenta? Cree una aqui</a>
         </form>
 
-        <!-- CONTENEDOR DE LOS PRODUCTOS -->
-        <div class="contenedor-cards">
-            <h2>Celulares</h2>
-            <div id="cards"></div>
-        </div>
-    </main>
-
-    <!-- INFO EXTRA -->
-    <div class="info-extra">
-
-        <div class="campo-info">
-            <i class="fas fa-map-marked-alt"></i>
-            <h3>Envío a domicilio</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima! Repellat, neque.</p>
-        </div>
-
-        <div class="campo-info">
-            <i class="far fa-money-bill-alt"></i>
-            <h3>Buenos precios</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima! Repellat, neque.</p>
-        </div>
-
-        <div class="campo-info">
-            <i class="far fa-thumbs-up"></i>
-            <h3>Con garantía</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima! Repellat, neque.</p>
-        </div>
-
-        <div class="campo-info">
-            <i class="fas fa-phone-alt"></i>
-            <h3>Atención personalizada</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima! Repellat, neque.</p>
-        </div>
-
     </div>
 
-    <!-- BOTON DE SUBIR SCROLL -->
-    <div class="btn-subir">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-
-    <!-- TEMPLATE CARD-->
-    <template class="template-card">
-        <article class="card">
-            <img class="img-card">
-            <div class="body-card">
-                <h3 class="body-marca"></h3>
-                <h3 class="body-modelo"></h3>
-                <span class="body-precio"></span>
-                <button class="btn-dark"><i class="fas fa-shopping-bag"></i></button>
-            </div>
-        </article>
-    </template>
-
-
+    
     <!-- FOOTER -->
     <footer class="footer">
 
