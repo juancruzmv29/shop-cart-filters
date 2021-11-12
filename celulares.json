@@ -1,0 +1,100 @@
+{
+    "celulares": [
+        {
+            "precio": 15000,
+            "id": 1,
+            "titulo": "iPhone 11 black",
+            "img": "app/assets/img/iphone11negro.png"
+        },
+        {
+            "precio": 15000,
+            "id": 2,
+            "titulo": "iPhone 12 azul",
+            "img": "app/assets/img/iphone12azul.png"
+        },
+        {
+            "precio": 15000,
+            "id": 3,
+            "titulo": "iPhone 12 Pro Max",
+            "img": "app/assets/img/iphone12promax.png"
+        },
+        {
+            "precio": 15000,
+            "id": 4,
+            "titulo": "iPhone 12 verde",
+            "img": "app/assets/img/iphone12verde.png"
+        },
+        {
+            "precio": 15000,
+            "id": 5,
+            "titulo": "iPhone SE",
+            "img": "app/assets/img/iphoneSE.png"
+        },
+        {
+            "precio": 15000,
+            "id": 6,
+            "titulo": "iPhone XR",
+            "img": "app/assets/img/iphonexr.png"
+        },
+        {
+            "precio": 15000,
+            "id": 7,
+            "titulo": "Moto g 100",
+            "img": "app/assets/img/motog100.png"
+        },
+        {
+            "precio": 15000,
+            "id": 8,
+            "titulo": "Poco M3",
+            "img": "app/assets/img/pocom3.png"
+        },
+        {
+            "precio": 15000,
+            "id": 9,
+            "titulo": "Poco X3",
+            "img": "app/assets/img/pocox3.png"
+        },
+        {
+            "precio": 15000,
+            "id": 10,
+            "titulo": "Samsung A11",
+            "img": "app/assets/img/samsunga11.png"
+        },
+        {
+            "precio": 15000,
+            "id": 11,
+            "titulo": "Samsung A12",
+            "img": "app/assets/img/samsunga12.png"
+        },
+        {
+            "precio": 15000,
+            "id": 12,
+            "titulo": "Samsung S10 Lite",
+            "img": "app/assets/img/samsungs10lite.png"
+        },
+        {
+            "precio": 15000,
+            "id": 13,
+            "titulo": "Samsung S10 Plus",
+            "img": "app/assets/img/samsungs10plus.png"
+        },
+        {
+            "precio": 15000,
+            "id": 14,
+            "titulo": "Samsung S21",
+            "img": "app/assets/img/samsungs21.png"
+        },
+        {
+            "precio": 15000,
+            "id": 15,
+            "titulo": "Xiaomi Redmi Note 9",
+            "img": "app/assets/img/xiaomiredminote9.png"
+        },
+        {
+            "precio": 15000,
+            "id": 16,
+            "titulo": "Xiaomi Redmi Note Pro 9",
+            "img": "app/assets/img/xiaomiredminotepro9.png"
+        }
+    ]
+}
