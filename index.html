@@ -22,132 +22,132 @@
     <!--========== GOOGLE FONTS ============-->
     <link href="https://fonts.googleapis.com/css2?family=Genos:wght@400;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!--========== STYLES CSS ============-->
-    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="css/app.css">
     <title>Tienda de Tecnologia</title>
 </head>
 <body>
     
     <!-- HEADER -->
-    <header>
+    <header class="header">
 
-        <!-- BOTON HAMBURGUESA-->
-        <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-        </button>
+        <div class="navegacion container">
+            <!-- BOTON HAMBURGUESA-->
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
 
-        <!-- LOGO MARCA -->
-        <div class="marca">
-            <h2>Smart<span>Shop</span></h2>
-        </div>
+            <!-- LOGO MARCA -->
+            <div class="marca">
+                <h2>Smart<span>Shop</span></h2>
+            </div>
 
-        <!-- MENU NAVEGACION-->
-        <div class="navegacion-menu">
-            <ul class="navegacion-lista">
-                <li><a href="#" class="navegacion-link">Inicio</a></li>
-                <li><a href="#" class="navegacion-link">La Empresa</a></li>
-                <li><a href="html/contacto.html" class="navegacion-link">Contacto</a></li>
-                <li><a href="#" class="navegacion-link">Ubicación</a></li>
-            </ul>
-        </div>
+            <!-- MENU NAVEGACION-->
+            <div class="navegacion-menu">
+                <ul class="navegacion-lista">
+                    <li><a href="#" class="navegacion-link">Inicio</a></li>
+                    <li><a href="#" class="navegacion-link">La Empresa</a></li>
+                    <li><a href="html/contacto.html" class="navegacion-link">Contacto</a></li>
+                    <li><a href="#" class="navegacion-link">Ubicación</a></li>
+                </ul>
+            </div>
 
-        <!-- BOTON BUSQUEDA, USUARIO, CARRITO -->
-        <div class="botones-2">
-            <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
+            <!-- BOTON BUSQUEDA, USUARIO, CARRITO -->
+            <div class="botones-2">
+                <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
 
-            <a href="html/usuario.html" class="btn-user"><i class="fas fa-user"></i></a>
+                <a href="html/usuario.html" class="btn-user"><i class="fas fa-user"></i></a>
 
-            <a href="html/carrito.html" class="btn-user"><i class="fas fa-shopping-cart"></i></a>
+                <a href="html/carrito.html" class="btn-user"><i class="fas fa-shopping-cart"></i></a>
+            </div>
         </div>
 
     </header>
 
     <!-- INPUT DE BUSCADOR -->
-    <div class="contenedor-buscador">
-        <input type="text" id="inputBuscador" value="¿Que deseas buscar?">
-        <div class="btn-cerrar-buscador">
-            <i class="fas fa-times"></i>
-        </div>
+    <div id="ctn-bars-search" class="ctn-bars-search">
+        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
     </div>
 
     <!-- CONTENEDOR DE FILTRADOR Y CONTENEDOR-->
-    <main class="contenedor">
+    <main class="main filtrado container">
 
-        <form class="filtros">
-            <h2>Filtrar por:</h2>
-
-            <div class="campo-filtro">
-                <label>Marca:</label>
-                <select name="marca" id="marca">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="Apple">Apple</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="Xiaomi">Xiaomi</option>
-                    <option value="Poco">POCO</option>
-                    <option value="Motorola">Motorola</option>
-                </select>
+            <form class="filtros">
+                <h2>Filtrar por:</h2>
+    
+                <div class="campos-filtro">
+                    <div class="campo-filtro">
+                        <label>Marca:</label>
+                        <select name="marca" id="marca">
+                            <option value="">-- Seleccione --</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                            <option value="Poco">POCO</option>
+                            <option value="Motorola">Motorola</option>
+                        </select>
+                    </div>
+        
+                    <div class="campo-filtro">
+                        <label>Precio minimo:</label>
+                        <select name="minimo" id="minimo">
+                            <option value="" >-- Seleccione --</option>
+                            <option value="40000">40.000</option>
+                            <option value="50000">50.000</option>
+                            <option value="60000">60.000</option>
+                            <option value="70000">70.000</option>
+                            <option value="80000">80.000</option>
+                            <option value="90000">90.000</option>
+                        </select>
+                    </div>
+        
+                    <div class="campo-filtro">
+                        <label>Precio máximo:</label>
+                        <select name="maximo" id="maximo">
+                            <option value="">-- Seleccione --</option>
+                            <option value="90000">90.000</option>
+                            <option value="100000">100.000</option>
+                            <option value="110000">110.000</option>
+                            <option value="120000">120.000</option>
+                            <option value="130000">130.000</option>
+                            <option value="140000">140.000</option>
+                        </select>
+                    </div>
+        
+                    <div class="campo-filtro">
+                        <label>Memoria interna</label>
+                        <select name="memoria" id="memoria">
+                            <option value="">-- Seleccione --</option>
+                            <option value="32">32 GB</option>
+                            <option value="64">64 GB</option>
+                            <option value="128">128 GB</option>
+                            <option value="256">256 GB</option>
+                        </select>
+                    </div>
+        
+                    <div class="campo-filtro">
+                        <label>Cámara:</label>
+                        <select name="camara" id="camara">
+                            <option value="">-- Seleccione --</option>
+                            <option value="32">32px</option>
+                            <option value="48">48px</option>
+                            <option value="120">120px</option>
+                            <option value="200">200px</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+    
+            <!-- CONTENEDOR DE LOS PRODUCTOS -->
+            <div class="contenedor-cards">
+                <h2>Celulares</h2>
+                <div id="cards"></div>
             </div>
-
-            <div class="campo-filtro">
-                <label>Precio minimo:</label>
-                <select name="minimo" id="minimo">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="40000">40.000</option>
-                    <option value="50000">50.000</option>
-                    <option value="60000">60.000</option>
-                    <option value="70000">70.000</option>
-                    <option value="80000">80.000</option>
-                    <option value="90000">90.000</option>
-                </select>
-            </div>
-
-            <div class="campo-filtro">
-                <label>Precio máximo:</label>
-                <select name="maximo" id="maximo">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="90000">90.000</option>
-                    <option value="100000">100.000</option>
-                    <option value="110000">110.000</option>
-                    <option value="120000">120.000</option>
-                    <option value="130000">130.000</option>
-                    <option value="140000">140.000</option>
-                </select>
-            </div>
-
-            <div class="campo-filtro">
-                <label>Memoria interna</label>
-                <select name="cmemoria" id="memoria">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="32">32 GB</option>
-                    <option value="64">64 GB</option>
-                    <option value="128">128 GB</option>
-                    <option value="256">256 GB</option>
-                </select>
-            </div>
-
-            <div class="campo-filtro">
-                <label>Cámara:</label>
-                <select name="camara" id="camara">
-                    <option value="" disabled>-- Seleccione --</option>
-                    <option value="32">32px</option>
-                    <option value="48">48px</option>
-                    <option value="120">120px</option>
-                    <option value="200">200px</option>
-                </select>
-            </div>
-        </form>
-
-        <!-- CONTENEDOR DE LOS PRODUCTOS -->
-        <div class="contenedor-cards">
-            <h2>Celulares</h2>
-            <div id="cards"></div>
-        </div>
     </main>
 
     <!-- INFO EXTRA -->
-    <div class="info-extra">
-
+    <section class="main info container">
         <div class="campo-info">
             <i class="fas fa-map-marked-alt"></i>
             <h3>Envío a domicilio</h3>
@@ -171,11 +171,10 @@
             <h3>Atención personalizada</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima! Repellat, neque.</p>
         </div>
-
-    </div>
+    </section>
 
     <!-- BOTON DE SUBIR SCROLL -->
-    <div class="btn-subir">
+    <div class="btn-subir hidden">
         <i class="fas fa-arrow-up"></i>
     </div>
 
@@ -197,7 +196,7 @@
     <footer class="footer">
 
         <!-- CONTENEDOR FOOTER -->
-        <div class="contenedor-footer">
+        <div class="main contenedor-footer">
 
             <div class="campo-footer">
                 <h3 class="titulo-footer">Productos</h3>
@@ -218,7 +217,7 @@
 
             <div class="campo-footer">
                 <h3 class="titulo-footer">Métodos de pago</h3>
-                <img src="img/payment.png" alt="metodos de pago">
+                <img src="/assets/images/payment.png" alt="metodos de pago">
             </div>
 
             <div class="campo-footer">

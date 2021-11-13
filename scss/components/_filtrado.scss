@@ -1,0 +1,92 @@
+.filtrado {
+    font-family: $fuente_segunda;
+
+
+    // MODO CELULAR
+    .filtros {
+        .campos-filtro {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            .campo-filtro {
+                display: block;
+                margin-bottom: 1.6rem;
+
+                label {
+                    text-align: start;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .contenedor-cards {
+        h2 {
+            text-align: center;
+            font-size: 2.3rem;
+        }
+
+        #cards {
+            @include grid(1, 1fr)
+        }
+    }
+
+    // MODO ESCRITORIO
+    @include desktop {
+        .filtros {
+
+            display: block;
+            h2 {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .campos-filtro {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3rem;
+            }
+
+            margin-bottom: 3rem;
+
+        }
+
+        .contenedor-cards {
+            @include desktop {
+                h2 {
+                    text-align: start;
+                    font-size: 3.4rem;
+                }
+
+                #cards {
+                    @include grid(3, 1fr)
+                }
+            }
+        }
+    }
+}
+
+// TEMPLATE DEL CARD
+.template-card {
+    .card {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .body-card {
+            padding: .8rem 2rem;
+            text-align: center;
+        }
+    }
+}

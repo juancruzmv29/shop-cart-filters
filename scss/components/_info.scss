@@ -1,0 +1,29 @@
+.info {
+
+    font-family: $fuente_segunda;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .campo-info {
+        margin-bottom: 2.5rem;
+        cursor: pointer;
+
+        i {
+            font-size: 3rem;
+            margin-bottom: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+}

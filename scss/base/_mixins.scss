@@ -1,0 +1,33 @@
+// MIXINS PARA MEDIA QUERIES
+
+//  MIXIN TELEFONO
+@mixin telefono {
+    @media (min-width: $telefono) {
+        @content;
+    }
+}
+
+
+// MIXIN TABLLET
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+
+// MIXIN DESKTOP
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+
+// MIXIN GRID
+@mixin grid($columnas, $espaciado) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+

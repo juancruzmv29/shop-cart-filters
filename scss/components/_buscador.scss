@@ -1,0 +1,40 @@
+// BUSCADOR
+.ctn-bars-search {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: $blanco;
+    padding: 15px;
+    transition: all 600ms;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+    &.is-active {
+        top: 7.8rem;
+        overflow-y: hidden;
+
+        @include desktop {
+            top: 7rem;
+        }
+    }
+
+    input {
+        width: 100%;
+        display: flex;
+        padding: .5rem .7rem;
+        margin: auto;
+        outline: none;
+        border: none;
+        flex: 1;
+        border-radius: 3px;
+
+        @include desktop {
+            width: 50%;
+        }
+        
+        &:focus {
+            border: 2px solid $negro;
+        }
+    }
+}

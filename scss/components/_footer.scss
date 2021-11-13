@@ -1,0 +1,67 @@
+.footer {
+    font-family: $fuente_principal;
+    color: $negro;
+
+    .contenedor-footer {
+        padding: 2rem 1rem;
+        text-align: start;
+
+        @include desktop {
+            padding: .4rem 15rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .campo-footer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.3rem;
+            .titulo-footer {
+                font-size: 1.6rem;
+                margin-bottom: .5rem;
+            }
+
+            a {
+                color: $negro;
+                font-size: 1.2rem;
+                margin-bottom: .6rem;
+            }
+
+            img {
+                width: 300px;
+            }
+
+
+            .redes-footer {
+                display: flex;
+                i {
+                    font-size: 2rem;
+                    margin-right: 1.4rem;
+                }
+
+                // ICONOS DE TWITTER, FACEBOOK E INSTAGRAM
+                .fa-twitter,
+                .fa-facebook,
+                .fa-instagram {
+                    transition: .3s all ease-out;
+                }
+
+                .fa-twitter {
+                    &:hover {
+                        color: $celeste;
+                    }
+                }
+                .fa-facebook {
+                    &:hover {
+                        color: $azul;
+                    }
+                }
+                .fa-instagram {
+                    &:hover {
+                        color: $violeta;
+                    }
+                }
+            }
+        }
+    }
+}

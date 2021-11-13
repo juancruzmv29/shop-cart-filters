@@ -1,0 +1,12 @@
+.btn-subir {
+    position: fixed;
+    background-color: transparent;
+    bottom: 3rem;
+    right: 2rem;
+    cursor: pointer;
+    transition: .4s all ease-out;
+
+    i {
+        font-size: 2rem;
+    }
+}

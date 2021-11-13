@@ -1,0 +1,57 @@
+// GLOBALES QUE VAMOS A NECESITAR
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 95px;
+}
+
+.none {
+    display: none;
+}
+
+.main {
+    padding: 2rem;
+    text-align: center;
+    padding-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
