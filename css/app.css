@@ -360,4 +360,281 @@ li {
   font-size: 2rem;
 }
 
+.main {
+  font-family: "Source Sans Pro", sans-serif;
+}
+@media (min-width: 1024px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+@media (min-width: 1024px) {
+  .main h2 {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+  }
+}
+.main .registrarse-form {
+  padding: 1rem;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .main .registrarse-form {
+    border: 1.5px solid #e1e1e1;
+    padding: 3rem;
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+}
+.main .registrarse-form .campo-form-registrarse {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .main .registrarse-form .campo-form-registrarse {
+    flex-direction: row;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+}
+.main .registrarse-form .campo-form-registrarse label {
+  text-align: start;
+  margin-bottom: 0.7rem;
+  font-size: 1.6rem;
+}
+@media (min-width: 1024px) {
+  .main .registrarse-form .campo-form-registrarse label {
+    text-align: center;
+    margin-right: 3rem;
+  }
+}
+.main .registrarse-form .campo-form-registrarse input {
+  flex: 1;
+  padding: 0.8rem 0.5rem;
+  border: none;
+  border: 1.5px solid #e1e1e1;
+}
+.main .registrarse-form .campo-form-registrarse input:focus {
+  outline: none;
+}
+.main .registrarse-form .campo-form-registrarse .input-password {
+  text-align: start;
+  display: flex;
+  flex: 1;
+}
+.main .registrarse-form .campo-form-registrarse .input-password input {
+  flex: 1;
+}
+.main .registrarse-form .campo-form-registrarse .input-password button {
+  cursor: pointer;
+  background-color: #e1e1e12c;
+  color: #ffffff;
+  font-weight: 400;
+  border: none;
+  padding: 1rem;
+}
+.main .registrarse-form .checkbox {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.main .registrarse-form .checkbox .checkbox1,
+.main .registrarse-form .checkbox .checkbox2 {
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.main .registrarse-form .checkbox .checkbox1 input,
+.main .registrarse-form .checkbox .checkbox2 input {
+  margin-right: 1rem;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #e1e1e1;
+}
+.main .registrarse-form .btn-guardar {
+  cursor: pointer;
+  background-color: #3057ac;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s all ease-out;
+}
+.main .registrarse-form .btn-guardar:hover {
+  background-color: #3918b3;
+}
+
+.registrarse-form-error {
+  background-color: #ff2525;
+  color: #ffffff;
+  margin-top: -1rem;
+  transition: all 800ms ease;
+  height: 2.5rem;
+}
+.registrarse-form-error.is-active {
+  display: block;
+  animation: mostrar-error-registro 1s 1 normal 0s ease-out both;
+}
+.registrarse-form-error .none {
+  display: none;
+}
+
+@keyframes mostrar-error-registro {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.main {
+  font-family: "Source Sans Pro", sans-serif;
+}
+@media (min-width: 1024px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 1024px) {
+  .main h2 {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+  }
+}
+.main .usuario-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .main .usuario-form {
+    border: 1.5px solid #e1e1e1;
+    padding: 3rem;
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+}
+.main .usuario-form .campo-form-usuario {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .main .usuario-form .campo-form-usuario {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+}
+.main .usuario-form .campo-form-usuario label {
+  text-align: start;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+@media (min-width: 1024px) {
+  .main .usuario-form .campo-form-usuario label {
+    text-align: center;
+    margin-right: 3rem;
+  }
+}
+.main .usuario-form .campo-form-usuario input {
+  border: none;
+  border: 1px solid #e1e1e1;
+  padding: 0.8rem 0.5rem;
+  flex: 1;
+}
+.main .usuario-form .campo-form-usuario input:focus {
+  outline: none;
+}
+.main .usuario-form .campo-form-usuario .input-password {
+  text-align: start;
+  display: flex;
+  flex: 1;
+}
+.main .usuario-form .campo-form-usuario .input-password button {
+  background-color: #e1e1e12c;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+.main .usuario-form .olvido {
+  margin-bottom: 2.5rem;
+  font-size: 1.4rem;
+  color: #3057ac;
+}
+.main .usuario-form .olvido:hover {
+  text-decoration: underline;
+}
+.main .usuario-form .btn-iniciar-sesion {
+  border: none;
+  cursor: pointer;
+  background-color: #3057ac;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  transition: 0.3s all ease-out;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 2.5rem;
+  width: 50%;
+}
+.main .usuario-form .btn-iniciar-sesion:hover {
+  background-color: #3918b3;
+}
+.main .usuario-form .no-cuenta {
+  font-size: 1.4rem;
+}
+.main .usuario-form .no-cuenta:hover {
+  text-decoration: underline;
+}
+
+.form-usuario-error {
+  margin-top: -1rem;
+  background-color: #ff2525;
+  color: #ffffff;
+  height: 2.5rem;
+  transition: all 800ms ease;
+}
+.form-usuario-error.is-active {
+  display: block;
+  animation: mostrar-error-usuario 1s normal 1 0s ease-out both;
+}
+.form-usuario-error .none {
+  display: none;
+}
+
+@keyframes mostrar-error-usuario {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */

@@ -22,43 +22,45 @@
     <!--========== GOOGLE FONTS ============-->
     <link href="https://fonts.googleapis.com/css2?family=Genos:wght@400;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!--========== STYLES CSS ============-->
-    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="/css/app.css">
     <title>Tienda de Tecnologia</title>
 </head>
 <body>
-    
+
     <!-- HEADER -->
-    <header>
+    <header class="header">
 
-        <!-- BOTON HAMBURGUESA-->
-        <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-        </button>
+        <div class="navegacion container">
+            <!-- BOTON HAMBURGUESA-->
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
 
-        <!-- LOGO MARCA -->
-        <div class="marca">
-            <h2>Smart<span>Shop</span></h2>
-        </div>
+            <!-- LOGO MARCA -->
+            <div class="marca">
+                <h2>Smart<span>Shop</span></h2>
+            </div>
 
-        <!-- MENU NAVEGACION-->
-        <div class="navegacion-menu">
-            <ul class="navegacion-lista">
-                <li><a href="#" class="navegacion-link">Inicio</a></li>
-                <li><a href="#" class="navegacion-link">La Empresa</a></li>
-                <li><a href="#" class="navegacion-link">Contacto</a></li>
-                <li><a href="#" class="navegacion-link">Ubicación</a></li>
-            </ul>
-        </div>
+            <!-- MENU NAVEGACION-->
+            <div class="navegacion-menu">
+                <ul class="navegacion-lista">
+                    <li><a href="#" class="navegacion-link">Inicio</a></li>
+                    <li><a href="#" class="navegacion-link">La Empresa</a></li>
+                    <li><a href="html/contacto.html" class="navegacion-link">Contacto</a></li>
+                    <li><a href="#" class="navegacion-link">Ubicación</a></li>
+                </ul>
+            </div>
 
-        <!-- BOTON BUSQUEDA, USUARIO, CARRITO -->
-        <div class="botones-2">
-            <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
+            <!-- BOTON BUSQUEDA, USUARIO, CARRITO -->
+            <div class="botones-2">
+                <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
 
-            <a href="html/usuario.html" class="btn-user"><i class="fas fa-user"></i></a>
+                <a href="html/usuario.html" class="btn-user"><i class="fas fa-user"></i></a>
 
-            <a href="html/carrito.html" class="btn-user"><i class="fas fa-shopping-cart"></i></a>
+                <a href="html/carrito.html" class="btn-user"><i class="fas fa-shopping-cart"></i></a>
+            </div>
         </div>
 
     </header>
@@ -71,43 +73,65 @@
         </div>
     </div>
 
-    <div class="main">
+    <div class="main container">
 
         <h2>Crear cuenta</h2>
 
+        <!-- FORMULARIO PARA REGISTRARSE -->
         <form class="registrarse-form">
+
+            <!-- CAMPO FORMULARIO -->
             <div class="campo-form-registrarse">
                 <label>Nombre</label>
-                <input type="text" name="nombre" id="nombre">
+                <input type="text" name="nombre" id="nombre" title="Este campo no debe tener números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" autocomplete="off" required>
             </div>
 
+            <!-- CAMPO FORMULARIO -->
             <div class="campo-form-registrarse">
                 <label>Apellido</label>
-                <input type="text" name="apellido" id="apellido">
+                <input type="text" name="apellido" id="apellido" title="Este campo no debe tener números" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" autocomplete="off" required>
             </div>
 
+            <!-- CAMPO FORMULARIO -->
             <div class="campo-form-registrarse">
                 <label>Dirección de correo electrónico</label>
-                <input type="email" name="email" id="emaii">
+                <input type="email" name="email" id="emaii" title="Su email tiene que contener @" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" autocomplete="off" required>
             </div>
 
+            <!-- CAMPO FORMULARIO -->
             <div class="campo-form-registrarse">
-                <h3>Contraseña</h3>
+                <label>Contraseña</label>
                 <div class="input-password">
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" title="Debe poner una contraseña" data-pattern="^.{1,25}$" autocomplete="off" required>
                     <button id="mostrar-password">Mostrar</button>
                 </div>
             </div>
 
+            <!-- CHECKBOX-->
             <div class="checkbox">
-                <input type="checkbox">
-                <label for="">Recibir ofertas</label>
+                <div class="checkbox1">
+                    <input type="checkbox">
+                    <label for="">Recibir ofertas</label>
+                </div>
 
-                <input type="checkbox">
-                <label for="">Recibir novedades</label>
+                <div class="checkbox2">
+                    <input type="checkbox">
+                    <label for="">Recibir novedades</label>
+                </div>
             </div>
 
+            <!-- BOTON GUARDAR -->
             <input type="submit" class="btn-guardar" value="Guardar">
+
+            <!-- RESPUESTA -->
+            <div class="respuesta-form-registrarse none">
+                <p>¡ Tu usuario se ha guardado con éxito! </p>
+            </div>
+
+            <!-- CARGADOR -->
+            <div class="loader-form-registrarse none">
+                <img src="/assets/oval.svg" alt="">
+            </div>
         </form>
 
     </div>
@@ -138,7 +162,7 @@
 
             <div class="campo-footer">
                 <h3 class="titulo-footer">Métodos de pago</h3>
-                <img src="img/payment.png" alt="metodos de pago">
+                <img src="/assets/images/payment.png" alt="metodos de pago">
             </div>
 
             <div class="campo-footer">

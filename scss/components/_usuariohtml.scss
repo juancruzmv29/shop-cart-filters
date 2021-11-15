@@ -1,0 +1,155 @@
+.main {
+
+    font-family: $fuente_tercera;
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+
+        @include desktop {
+            font-size: 3.2rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .usuario-form {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desktop {
+            border: 1.5px solid $gris;
+            padding: 3rem;
+            width: 50%;
+            margin-bottom: 4rem;
+        }
+
+        .campo-form-usuario {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            width: 100%;
+
+            @include desktop  {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+            }
+
+            label {
+                text-align: start;
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+
+                @include desktop {
+                    text-align: center;
+                    margin-right: 3rem;
+                }
+            }
+
+            input {
+                border: none;
+                border: 1px solid $gris;
+                padding: .8rem .5rem;
+                flex: 1;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .input-password {
+                text-align: start;
+                display: flex;
+                flex: 1;
+
+
+
+                button {
+                    background-color: $gris_oscuro;
+                    color: $blanco;
+                    border: none;
+                    padding: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .olvido {
+            margin-bottom: 2.5rem;
+            font-size: 1.4rem;
+            color: $azulMarino;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .btn-iniciar-sesion {
+            border: none;
+            cursor: pointer;
+            background-color: $azulMarino;
+            color: $blanco;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            transition: .3s all ease-out;
+            font-weight: $regular;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-bottom: 2.5rem;
+            width: 50%;
+
+            &:hover {
+                background-color: $azul;
+            }
+        }
+
+        .no-cuenta {
+            font-size: 1.4rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// MENSAJE DE ERROR DEL FORM-USUARIO
+.form-usuario-error {
+    margin-top: -1rem;
+    background-color: $rojo;
+    color: $blanco;
+    height: 2.5rem;
+    transition: all 800ms ease;
+
+
+    &.is-active {
+        display: block;
+        animation: mostrar-error-usuario 1s normal 1 0s ease-out both;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+// ANIMACION
+@keyframes mostrar-error-usuario {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}

@@ -22,43 +22,45 @@
     <!--========== GOOGLE FONTS ============-->
     <link href="https://fonts.googleapis.com/css2?family=Genos:wght@400;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!--========== STYLES CSS ============-->
-    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="/css/app.css">
     <title>Tienda de Tecnologia</title>
 </head>
 <body>
     
     <!-- HEADER -->
-    <header>
+    <header class="header">
 
-        <!-- BOTON HAMBURGUESA-->
-        <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-        </button>
+        <div class="navegacion container">
+            <!-- BOTON HAMBURGUESA-->
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
 
-        <!-- LOGO MARCA -->
-        <div class="marca">
-            <h2>Smart<span>Shop</span></h2>
-        </div>
+            <!-- LOGO MARCA -->
+            <div class="marca">
+                <h2>Smart<span>Shop</span></h2>
+            </div>
 
-        <!-- MENU NAVEGACION-->
-        <div class="navegacion-menu">
-            <ul class="navegacion-lista">
-                <li><a href="#" class="navegacion-link">Inicio</a></li>
-                <li><a href="#" class="navegacion-link">La Empresa</a></li>
-                <li><a href="#" class="navegacion-link">Contacto</a></li>
-                <li><a href="#" class="navegacion-link">Ubicación</a></li>
-            </ul>
-        </div>
+            <!-- MENU NAVEGACION-->
+            <div class="navegacion-menu">
+                <ul class="navegacion-lista">
+                    <li><a href="#" class="navegacion-link">Inicio</a></li>
+                    <li><a href="#" class="navegacion-link">La Empresa</a></li>
+                    <li><a href="html/contacto.html" class="navegacion-link">Contacto</a></li>
+                    <li><a href="#" class="navegacion-link">Ubicación</a></li>
+                </ul>
+            </div>
 
-        <!-- BOTON BUSQUEDA, USUARIO, CARRITO -->
-        <div class="botones-2">
-            <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
+            <!-- BOTON BUSQUEDA, USUARIO, CARRITO -->
+            <div class="botones-2">
+                <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
 
-            <a href="html/usuario.html" class="btn-user"><i class="fas fa-user"></i></a>
+                <a href="html/usuario.html" class="btn-user"><i class="fas fa-user"></i></a>
 
-            <a href="html/carrito.html" class="btn-user"><i class="fas fa-shopping-cart"></i></a>
+                <a href="html/carrito.html" class="btn-user"><i class="fas fa-shopping-cart"></i></a>
+            </div>
         </div>
 
     </header>
@@ -75,16 +77,16 @@
 
         <h2>Iniciar sesión con cuenta</h2>
 
-        <form class="registrarse-form">
-            <div class="campo-form-registrarse">
-                <h3>Dirección de correo electronico</h3>
-                <input type="text" name="email" id="email">
+        <form class="usuario-form">
+            <div class="campo-form-usuario">
+                <label>Dirección de correo electronico</label>
+                <input type="text" name="email" id="email" title="Debe poner un email válido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required autocomplete="off">
             </div>
 
-            <div class="campo-form-registrarse">
-                <h3>Contraseña</h3>
+            <div class="campo-form-usuario">
+                <label>Contraseña</label>
                 <div class="input-password">
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required autocomplete="off">
                     <button id="mostrar-password">Mostrar</button>
                 </div>
             </div>
@@ -93,7 +95,7 @@
 
             <input type="submit" class="btn-iniciar-sesion" value="Iniciar Sesión">
 
-            <a href="#" class="no-cuenta">¿No tiene una cuenta? Cree una aqui</a>
+            <a href="registrarse.html" class="no-cuenta">¿No tiene una cuenta? Cree una aqui</a>
         </form>
 
     </div>
@@ -124,7 +126,7 @@
 
             <div class="campo-footer">
                 <h3 class="titulo-footer">Métodos de pago</h3>
-                <img src="img/payment.png" alt="metodos de pago">
+                <img src="/assets/images/payment.png" alt="metodos de pago">
             </div>
 
             <div class="campo-footer">
