@@ -636,5 +636,137 @@ li {
     opacity: 1;
   }
 }
+.main {
+  font-family: "Source Sans Pro", sans-serif;
+}
+@media (min-width: 1024px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+@media (min-width: 1024px) {
+  .main h2 {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+  }
+}
+.main .form-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .main .form-contacto {
+    border: 1px solid #e1e1e1;
+    padding: 3rem;
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+}
+.main .form-contacto .campo-form-contacto {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .main .form-contacto .campo-form-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+}
+.main .form-contacto .campo-form-contacto label {
+  text-align: start;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  .main .form-contacto .campo-form-contacto label {
+    text-align: center;
+    margin-right: 3rem;
+  }
+}
+.main .form-contacto .campo-form-contacto input {
+  border: none;
+  border: 1px solid #e1e1e1;
+  flex: 1;
+  padding: 0.8rem 0.5rem;
+}
+.main .form-contacto .campo-form-contacto input:focus {
+  outline: none;
+}
+.main .form-contacto .campo-form-contacto textarea {
+  border: none;
+  border: 1px solid #e1e1e1;
+  flex: 1;
+  padding: 0.8rem 0.5rem;
+}
+.main .form-contacto .campo-form-contacto textarea:focus {
+  outline: none;
+}
+.main .form-contacto .loader-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2rem;
+  display: none;
+}
+.main .form-contacto .respuesta-form-contacto {
+  text-align: center;
+}
+.main .form-contacto .btn-guardar {
+  border: none;
+  cursor: pointer;
+  background-color: #3057ac;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  transition: 0.3s all ease-out;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 2.5rem;
+  width: 50%;
+}
+.main .form-contacto .btn-guardar:hover {
+  background-color: #3918b3;
+}
+
+.form-contacto-error {
+  background-color: #ff2525;
+  color: #ffffff;
+  margin-top: -1rem;
+  height: 2.5rem;
+  transition: 800ms all ease;
+}
+.form-contacto-error.is-active {
+  display: block;
+  animation: mostrar-error-contacto 1s normal 1 0s ease-out both;
+}
+.form-contacto-error .none {
+  display: none;
+}
+
+@keyframes mostrar-error-contacto {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

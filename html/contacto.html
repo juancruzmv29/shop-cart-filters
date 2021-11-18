@@ -22,43 +22,45 @@
     <!--========== GOOGLE FONTS ============-->
     <link href="https://fonts.googleapis.com/css2?family=Genos:wght@400;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@300;400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!--========== STYLES CSS ============-->
-    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="/css/app.css">
     <title>Tienda de Tecnologia</title>
 </head>
 <body>
     
     <!-- HEADER -->
-    <header>
+    <header class="header">
 
-        <!-- BOTON HAMBURGUESA-->
-        <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-        </button>
+        <div class="navegacion container">
+            <!-- BOTON HAMBURGUESA-->
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
 
-        <!-- LOGO MARCA -->
-        <div class="marca">
-            <h2>Smart<span>Shop</span></h2>
-        </div>
+            <!-- LOGO MARCA -->
+            <div class="marca">
+                <h2>Smart<span>Shop</span></h2>
+            </div>
 
-        <!-- MENU NAVEGACION-->
-        <div class="navegacion-menu">
-            <ul class="navegacion-lista">
-                <li><a href="#" class="navegacion-link">Inicio</a></li>
-                <li><a href="#" class="navegacion-link">La Empresa</a></li>
-                <li><a href="#" class="navegacion-link">Contacto</a></li>
-                <li><a href="#" class="navegacion-link">Ubicación</a></li>
-            </ul>
-        </div>
+            <!-- MENU NAVEGACION-->
+            <div class="navegacion-menu">
+                <ul class="navegacion-lista">
+                    <li><a href="#" class="navegacion-link">Inicio</a></li>
+                    <li><a href="#" class="navegacion-link">La Empresa</a></li>
+                    <li><a href="html/contacto.html" class="navegacion-link">Contacto</a></li>
+                    <li><a href="#" class="navegacion-link">Ubicación</a></li>
+                </ul>
+            </div>
 
-        <!-- BOTON BUSQUEDA, USUARIO, CARRITO -->
-        <div class="botones-2">
-            <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
+            <!-- BOTON BUSQUEDA, USUARIO, CARRITO -->
+            <div class="botones-2">
+                <a href="#" class="btn-search"><i class="fas fa-search"></i></a>
 
-            <a href="html/usuario.html" class="btn-user"><i class="fas fa-user"></i></a>
+                <a href="html/usuario.html" class="btn-user"><i class="fas fa-user"></i></a>
 
-            <a href="html/carrito.html" class="btn-user"><i class="fas fa-shopping-cart"></i></a>
+                <a href="html/carrito.html" class="btn-user"><i class="fas fa-shopping-cart"></i></a>
+            </div>
         </div>
 
     </header>
@@ -78,38 +80,40 @@
         <form action="https://formsubmit.co/juancruzmv29@hotmail.com" id="form-contacto" method="POST" target="_blank" class="form-contacto">
             <div class="campo-form-contacto">
                 <label>Nombre</label>
-                <input type="text" name="nombre" id="nombre" title="El nombre debe tener solo letras">
+                <input type="text" name="nombre" id="nombre" title="El nombre debe tener solo letras" required autocomplete="off">
             </div>
 
             <div class="campo-form-contacto">
                 <label>Apellido</label>
-                <input type="text" name="apellido" id="apellido" title="El apellido debe tener solo letras">
+                <input type="text" name="apellido" id="apellido" title="El apellido debe tener solo letras" required autocomplete="off">
             </div>
 
             <div class="campo-form-contacto">
                 <label>Dirección de correo electrónico</label>
-                <input type="email" name="email" id="emaii" title="El email debe tener los carácteres estipulados">
+                <input type="email" name="email" id="emaii" title="El email debe tener los carácteres estipulados"  required autocomplete="off">
             </div>
 
             <div class="campo-form-contacto">
                 <label>Asunto</label>
-                <input type="text" name="asunto" id="asunto">
+                <input type="text" name="asunto" id="asunto" required autocomplete="off">
             </div>
 
             <div class="campo-form-contacto">
                 <label>Mensaje</label>
-                <textarea name="mensaje" id="" cols="50" rows="5"></textarea>
+                <textarea name="mensaje" id="" cols="50" rows="5" required autocomplete="off"></textarea>
             </div>
 
+            <input type="submit" class="btn-guardar" value="Enviar">
+
             <div class="loader-contacto none">
-                <img src="assets/oval.svg" alt="cargando...">
+                <img src="/assets/oval.svg" alt="cargando...">
             </div>
 
             <div class="respuesta-form-contacto none">
                 <p>Tu mensaje se ha enviado con éxito</p>
             </div>
 
-            <input type="submit" class="btn-guardar" value="Enviar">
+            
         </form>
 
     </div>
@@ -140,7 +144,7 @@
 
             <div class="campo-footer">
                 <h3 class="titulo-footer">Métodos de pago</h3>
-                <img src="img/payment.png" alt="metodos de pago">
+                <img src="/assets/images/payment.png" alt="metodos de pago">
             </div>
 
             <div class="campo-footer">
