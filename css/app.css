@@ -78,15 +78,16 @@ li {
 @media screen and (max-width: 667px) {
   .header .navegacion .navegacion-menu {
     position: fixed;
-    max-width: 50%;
+    width: 50%;
     height: 100vh;
     top: 0;
     left: -100%;
-    padding: 2rem 1rem;
+    padding: 6rem 1rem;
     background-color: #ffffff;
     color: #000000;
     z-index: 2;
     transition: 0.3s all ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   .header .navegacion .navegacion-menu.is-active {
     left: 0;
@@ -137,6 +138,7 @@ li {
 .header .navegacion .hamburger {
   display: flex;
   background-color: transparent;
+  z-index: 3;
 }
 @media (min-width: 1024px) {
   .header .navegacion .hamburger {
@@ -195,7 +197,39 @@ li {
   }
 }
 .ctn-bars-search input:focus {
-  border: 2px solid #000000;
+  outline: none;
+  border: 1px solid #000;
+}
+.ctn-bars-search .borrar-value {
+  position: absolute;
+  cursor: pointer;
+  right: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  top: 2rem;
+  transition: 0.3s all ease-out;
+  visibility: hidden;
+}
+@media (min-width: 1024px) {
+  .ctn-bars-search .borrar-value {
+    right: 40rem;
+  }
+}
+.ctn-bars-search .borrar-value.is-active {
+  visibility: visible;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: grid;
+}
+
+body.is-active {
+  overflow: hidden;
 }
 
 .filtrado {
@@ -306,6 +340,7 @@ li {
   .footer .contenedor-footer {
     padding: 0.4rem 15rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 }

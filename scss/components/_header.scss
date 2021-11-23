@@ -27,15 +27,16 @@
             // MODO TELEFONO
             @media screen and (max-width: 667px) {
                 position: fixed;
-                max-width: 50%;
+                width: 50%;
                 height: 100vh;
                 top: 0;
                 left: -100%;
-                padding: 2rem 1rem;
+                padding: 6rem 1rem;
                 background-color: $blanco;
                 color: $negro;
                 z-index: 2;
                 transition: .3s all ease;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
 
                 &.is-active {
                     left: 0;
@@ -103,6 +104,7 @@
 
             display: flex;
             background-color: transparent;
+            z-index: 3;
 
             @include desktop {
                 display: none;

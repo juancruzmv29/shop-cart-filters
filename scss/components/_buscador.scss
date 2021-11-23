@@ -34,7 +34,47 @@
         }
         
         &:focus {
-            border: 2px solid $negro;
+            outline: none;
+            border: 1px solid #000;
         }
     }
+
+    .borrar-value {
+
+        position: absolute;
+        cursor: pointer;
+        right: 2rem;
+        font-size: 1.5rem;
+        font-weight: $delgada;
+        top: 2rem;
+        transition: .3s all ease-out;
+        visibility: hidden;
+
+
+        @include desktop {
+            right: 40rem;
+        }
+
+        &.is-active {
+            visibility: visible;
+        }
+        
+    }
+}
+
+.overlay {
+    position: fixed;
+    background-color: rgba(0,0,0,.5); // para la transpaarencia cuando se muestra la imagen que seleccionamos
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: grid;
+}
+
+body {
+
+    &.is-active {
+        overflow: hidden;
+    }
+    
 }
