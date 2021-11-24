@@ -35,8 +35,8 @@ export default function contactForm() {
             // Si no hay patrón va a ejecutar lo siguiente
             if(!pattern) {
                 return $input.value === ""
-                    ? document.getElementById($input.name).classList.add("form-contacto-error")
-                    : document.getElementById($input.name).classList.remove("form-contacto-error")
+                    ? document.getElementById($input.name).classList.add("activo")
+                    : document.getElementById($input.name).classList.remove("activo")
             }
         }
     });

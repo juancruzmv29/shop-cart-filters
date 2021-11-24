@@ -15,6 +15,9 @@ export default function navegador(navegacion, btnAbrir) {
 
         // Si apretamos el boton de click para abrir
         if(e.target.matches(btnAbrir)) {
+
+            e.preventDefault();
+
             document.querySelector(navegacion).classList.add("is-active");
             $body.classList.add("is-active");
             $body.appendChild(overlay);
@@ -52,5 +55,4 @@ export default function navegador(navegacion, btnAbrir) {
             }
         }
     })
-
 }

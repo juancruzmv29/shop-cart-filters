@@ -122,7 +122,7 @@
     height: 2.5rem;
     transition: 800ms all ease;
 
-    &.is-active {
+    &.activo {
         display: block;
         animation: mostrar-error-contacto 1s normal 1 0s ease-out both;
     }

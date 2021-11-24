@@ -34,7 +34,62 @@
         }
 
         #cards {
-            @include grid(1, 1fr)
+            @include grid(1, 1fr);
+        }
+
+        .cards {
+            // TEMPLATE DEL CARD
+            .card {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem;
+                border: 1px solid #000;
+
+
+                img {
+                    cursor: pointer;
+                    width: 100%;
+                    height: auto;
+                    border-bottom: 1px solid $gris;
+                    transition: .4s all ease-out;
+                }
+
+                .body-card {
+                    padding: .8rem 2rem;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    .body-marca {
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .body-modelo {
+                        font-size: 1.5rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .body-precio {
+                        font-size: 1.8rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .btn-dark {
+                        cursor: pointer;
+                        background-color: $blanco;
+                        padding: .4rem .8rem;
+                        transition: .3s all ease-out;
+
+                        &:hover {
+                            background-color: $gris;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -74,19 +129,4 @@
     }
 }
 
-// TEMPLATE DEL CARD
-.template-card {
-    .card {
-        position: relative;
 
-        img {
-            width: 100%;
-            height: 200px;
-        }
-
-        .body-card {
-            padding: .8rem 2rem;
-            text-align: center;
-        }
-    }
-}

@@ -74,12 +74,17 @@
 
 
 
-                button {
-                    background-color: $gris_oscuro;
-                    color: $blanco;
-                    border: none;
-                    padding: 1rem;
+                span {
                     cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.3rem;
+                    background-color: $azulMarino;
+                    color: $blanco;
+                    padding: .8rem .5rem;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: $regular;
                 }
             }
         }
@@ -131,7 +136,7 @@
     transition: all 800ms ease;
 
 
-    &.is-active {
+    &.is-activo {
         display: block;
         animation: mostrar-error-usuario 1s normal 1 0s ease-out both;
     }

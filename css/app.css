@@ -262,6 +262,49 @@ body.is-active {
   gap: 1fr;
   grid-template-columns: repeat(1, 1fr);
 }
+.filtrado .contenedor-cards .cards .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border: 1px solid #000;
+}
+.filtrado .contenedor-cards .cards .card img {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e1e1e1;
+  transition: 0.4s all ease-out;
+}
+.filtrado .contenedor-cards .cards .card .body-card {
+  padding: 0.8rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.filtrado .contenedor-cards .cards .card .body-card .body-marca {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.filtrado .contenedor-cards .cards .card .body-card .body-modelo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.filtrado .contenedor-cards .cards .card .body-card .body-precio {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.filtrado .contenedor-cards .cards .card .body-card .btn-dark {
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  transition: 0.3s all ease-out;
+}
+.filtrado .contenedor-cards .cards .card .body-card .btn-dark:hover {
+  background-color: #e1e1e1;
+}
 @media (min-width: 1024px) {
   .filtrado .filtros {
     display: block;
@@ -288,18 +331,6 @@ body.is-active {
     gap: 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.template-card .card {
-  position: relative;
-}
-.template-card .card img {
-  width: 100%;
-  height: 200px;
-}
-.template-card .card .body-card {
-  padding: 0.8rem 2rem;
-  text-align: center;
 }
 
 .info {
@@ -608,12 +639,17 @@ body.is-active {
   display: flex;
   flex: 1;
 }
-.main .usuario-form .campo-form-usuario .input-password button {
-  background-color: #e1e1e12c;
-  color: #ffffff;
-  border: none;
-  padding: 1rem;
+.main .usuario-form .campo-form-usuario .input-password span {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: #3057ac;
+  color: #ffffff;
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .main .usuario-form .olvido {
   margin-bottom: 2.5rem;
@@ -653,7 +689,7 @@ body.is-active {
   height: 2.5rem;
   transition: all 800ms ease;
 }
-.form-usuario-error.is-active {
+.form-usuario-error.is-activo {
   display: block;
   animation: mostrar-error-usuario 1s normal 1 0s ease-out both;
 }
@@ -785,7 +821,7 @@ body.is-active {
   height: 2.5rem;
   transition: 800ms all ease;
 }
-.form-contacto-error.is-active {
+.form-contacto-error.activo {
   display: block;
   animation: mostrar-error-contacto 1s normal 1 0s ease-out both;
 }
