@@ -1,137 +1,136 @@
-{
-    "celulares": [
+[
+    
         {
             "id": 1,
             "img": "assets/images/iphone11pro.jpg",
             "marca": "Apple",
             "modelo": "iPhone 11 Pro",
-            "precio": "120.000"
+            "precio": "120000"
         },
         {
             "id": 2,
             "img": "assets/images/iphone11rojo.jpg",
             "marca": "Apple",
             "modelo": "iPhone 11",
-            "precio": "90.000"
+            "precio": "90000"
         },
         {
             "id": 3,
             "img": "assets/images/iphone12.jpg",
             "marca": "Apple",
             "modelo": "iPhone 12",
-            "precio": "100.000"
+            "precio": "100000"
         },
         {
             "id": 4,
             "img": "assets/images/iphone12promax.jpg",
             "marca": "Apple",
             "modelo": "iPhone 12 Pro Max",
-            "precio": "130.000"
+            "precio": "130000"
         },
         {
             "id": 5,
             "img": "assets/images/iphone13.png",
             "marca": "Apple",
             "modelo": "iPhone 13",
-            "precio": "160.000"
+            "precio": "160000"
         },
         {
             "id": 6,
             "img": "assets/images/iphone13pro.png",
             "marca": "Apple",
             "modelo": "iPhone 13 Pro",
-            "precio": "180.000"
+            "precio": "180000"
         },
         {
             "id": 7,
             "img": "assets/images/iphone13promax.png",
             "marca": "Apple",
             "modelo": "iPhone 13 Pro Max",
-            "precio": "200.000"
+            "precio": "200000"
         },
         {
             "id": 8,
             "img": "assets/images/motorolaedge20pro.jpg",
             "marca": "Motorola",
             "modelo": "Edge Pro",
-            "precio": "70.000"
+            "precio": "70000"
         },
         {
             "id": 9,
             "img": "assets/images/motorolag100.jpg",
             "marca": "Motorola",
             "modelo": "G100",
-            "precio": "55.000"
+            "precio": "55000"
         },
         {
             "id": 10,
             "img": "assets/images/pocophonem3.jpg",
             "marca": "POCO",
             "modelo": "Pocophone M3",
-            "precio": "63.000"
+            "precio": "63000"
         },
         {
             "id": 11,
             "img": "assets/images/pocophonem3pro.jpg",
             "marca": "POCO",
             "modelo": "Pocophone M3 Pro",
-            "precio": "75.000"
+            "precio": "75000"
         },
         {
             "id": 12,
             "img": "assets/images/pocophonex3.jpg",
             "marca": "POCO",
             "modelo": "Pocophone X3",
-            "precio": "53.000"
+            "precio": "53000"
         },
         {
             "id": 13,
             "img": "assets/images/samsungs10e.jpg",
             "marca": "Samsung",
             "modelo": "S10e",
-            "precio": "86.000"
+            "precio": "86000"
         },
         {
             "id": 14,
             "img": "assets/images/samsungs20.png",
             "marca": "Samsung",
             "modelo": "S20",
-            "precio": "93.000"
+            "precio": "93000"
         },
         {
             "id": 15,
             "img": "assets/images/samsungs20ultra.jpg",
             "marca": "Samsung",
             "modelo": "S20 Ultra",
-            "precio": "100.000"
+            "precio": "100000"
         },
         {
             "id": 16,
             "img": "assets/images/samsungs21ultra.png",
             "marca": "Samsung",
             "modelo": "S21 Ultra",
-            "precio": "120.000"
+            "precio": "120000"
         },
         {
             "id": 17,
             "img": "assets/images/sasmungs10.jpg",
             "marca": "Samsung",
             "modelo": "S10",
-            "precio": "91.000"
+            "precio": "91000"
         },
         {
             "id": 18,
             "img": "assets/images/xiaomiredmi9.jpg",
             "marca": "Xiaomi",
             "modelo": "Redmi 9",
-            "precio": "58.000"
+            "precio": "58000"
         },
         {
             "id": 19,
             "img": "assets/images/xiaomiredminote10.jpg",
             "marca": "Xiaomi",
             "modelo": "Redmi Note 10",
-            "precio": "72.000"
+            "precio": "72000"
         }
-    ]
-}
+]

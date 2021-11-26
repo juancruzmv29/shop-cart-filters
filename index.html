@@ -59,7 +59,9 @@
 
                 <a href="html/usuario.html" class="btn-user"><i class="fas fa-user"></i></a>
 
-                <a href="html/carrito.html" class="btn-user"><i class="fas fa-shopping-cart"></i></a>
+                <div class="btn-carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
             </div>
         </div>
 
@@ -72,6 +74,29 @@
         <div class="borrar-value" id="borrar-value">
             <i class="fas fa-times"></i>
         </div>
+    </div>
+
+    <!-- APARTADO DEL CARRITO -->
+    <div class="carrito">
+
+        <div class="btn-cerrar-carrito">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <table class="carrito-table">
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Cantidad</th>
+                    <th>Modificar</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+                <tr id="footer-carrito"></tr>
+            </tfoot>
+        </table>
     </div>
 
     <!-- CONTENEDOR DE FILTRADOR Y CONTENEDOR-->
@@ -150,7 +175,7 @@
             </div>
     </main>
 
-    <!-- INFO EXTRA -->
+    <!-- INFO EXTRA
     <section class="main info container">
         <div class="campo-info">
             <i class="fas fa-map-marked-alt"></i>
@@ -175,10 +200,10 @@
             <h3>Atención personalizada</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima! Repellat, neque.</p>
         </div>
-    </section>
+    </section> -->
 
     <!-- BOTON DE SUBIR SCROLL -->
-    <div class="btn-subir hidden">
+    <div class="btn-subir hidden" id="btn-subir">
         <i class="fas fa-arrow-up"></i>
     </div>
 
@@ -188,18 +213,42 @@
             <img class="img-card">
             <div class="body-card">
                 <h3 class="body-marca"></h3>
-                <h3 class="body-modelo"></h3>
-                <span class="body-precio">$ </span>
-                <button class="btn-dark"><i class="fas fa-shopping-bag"></i></button>
+                <h4 class="body-modelo"></h4>
+                <span class="body-precio"> </span>
+                <button class="btn-dark">
+                    <i class="fas fa-shopping-bag"></i>
+                </button>
             </div>
         </article>
     </template>
 
+    <!-- TEMPLATE CARRITO -->
+    <template id="template-carrito">
+        <tr>
+            <td class="modelo-producto"></td>
+            <td class="cantidad-producto"></td>
+            <td>
+                <button class="btn-sumar">+</button>
+                <button class="btn-restar">-</button>
+            </td>
+            <td class="precio-producto"></td>
+        </tr>
+    </template>
 
-    <!-- FOOTER -->
+    <!-- TEMPLATE FOOTER -->
+    <template id="template-footer">
+        <th>Total Productos</th>
+        <td class="cantidad-carrito"></td>
+        <td>
+            <button class="btn-vaciar" id="btn-vaciar">Vaciar Carrito</button>
+        </td>
+        <td class="total-carrito">$ <span></span></td>
+    </template>
+
+
+    <!-- FOOTER 
     <footer class="footer">
 
-        <!-- CONTENEDOR FOOTER -->
         <div class="main contenedor-footer">
 
             <div class="campo-footer">
@@ -238,7 +287,7 @@
 
         </div>
 
-    </footer>
+    </footer> -->
 
     <script src="js/app.js" type="module"></script>
 </body>

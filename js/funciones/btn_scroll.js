@@ -1,16 +1,16 @@
 // Función para el boton de scroll
 export default function scrollBtn(btn) {
 
-    const $btnSubir = document.querySelector(btn);
+    const btnSubir = document.querySelector(btn);
 
     // Evento para cuando hagamos scroll
     window.addEventListener("scroll", e => {
         let scrollY = window.pageYOffset;
 
         if(scrollY > 400) {
-            $btnSubir.classList.remove("hidden");
+            btnSubir.classList.remove("hidden");
         } else {
-            $btnSubir.classList.add("hidden");
+            btnSubir.classList.add("hidden");
         }
     })
 
